@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icon-alura.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto.</title>
+</head>
+
+<body>
+    <div class="logo-alura">
+        <img src="imagens/logo-alura.png" alt="logo da Alura">
+    </div>
+    <main class="conteudo-principal">
+        <section class="conteudo-principal-section">
+            <h2>Chalenger Alura - Decodificador de Texto</h2>
+            <div class="conteudo-principal-text">
+                <textarea class="texto" placeholder="Digite seu texto..." spellcheck="false" id="area-do-texto"
+                    cols="40" rows="7"></textarea>
+            </div>
+            <div class="conteudo-principal-alert">
+                <img src="imagens/icon-alert.png" alt="Ícone de alerta">
+                <p>Apenas letras minúsculas e sem acentos.</p>
+            </div>
+            <div class="conteudo-principal-buttons">
+                <button onclick="criptografar()" class="botao-criptografar" id="btn-criptografar"
+                    type="submit">Criptografar</button>
+                <button onclick="descriptografar()" class="botao-descriptografar" id="btn-descriptografar"
+                    type="submit">Descriptografar</button>
+            </div>
+        </section>
+        <section class="conteudo-principal-messages">
+            <div class="conteudo-principal-box">
+                <img src="imagens/imagen-search.svg" alt="Caixa de digitar texto">
+                <div class="conteudo-principal-informations">
+                    <h2>Nenhuma mensagem encontrada.</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo-principal-copyarea">
+            <div class="conteudo-principal-copies">
+                <textarea readonly="true" class="destino-do-texto" spellcheck="false" id="area-de-copia" cols="25"
+                    rows="9"></textarea>
+                <button class="botao-copiar" id="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/matheus_b.f/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://github.com/matheusbarbosaf" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/matheusbarbosa- "target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
